@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  color: #4c4d5f;
+  background-color: #fff;
+  font-family: "Proximanova opt", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1.5em;
+  font-size: 1.4em;
+}
+
+.logo {
+  font-size: 2em;
+  color: #00a37e;
+  cursor: default;
+  font-weight: 400;
+  text-align: center;
+  flex: 2;
+}
+.nav-items {
+  flex: 3;
+  display: flex;
+  margin: 0 5em;
+}
+
+.nav-item {
+  flex: 1;
+}
+
+.nav-item a {
+  color: inherit;
+  text-decoration: none;
+  padding-right: 1em;
+}
+
+.nav-item a:hover {
+  color: #0d0d14;
+}
+
+.arrow-right {
+  border: solid;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 0.2em 0.1em;
+  padding: 0.2em;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.nav-buttons {
+  flex: 2;
+  font-weight: bold;
+}
+
+.nav-buttons .button1 {
+  color: #00a37e;
+  text-decoration: none;
+  border: 1px solid #00a37e;
+  border-radius: 4px;
+  padding: 0.6em 1.5em;
+  margin-right: 0.5em;
+}
+.nav-buttons .button1:hover {
+  background: #00b289;
+  color: #fff;
+}
+.nav-buttons .button2 {
+  text-decoration: none;
+  color: #fff;
+  background: #00b289;
+  border: 1px solid #00b289;
+  border-radius: 4px;
+  padding: 0.6em 1.5em;
+}
+
+.nav-buttons .button2:hover {
+  background: #00a37e;
+}
