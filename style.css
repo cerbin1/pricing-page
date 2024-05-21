@@ -3,7 +3,7 @@ body {
   color: #4c4d5f;
   background-color: #fff;
   font-family: "Proximanova opt", sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 20px;
   font-weight: 400;
 }
@@ -12,7 +12,6 @@ nav {
   display: flex;
   align-items: center;
   padding: 1.5em;
-  font-size: 1.4em;
 }
 
 .logo {
@@ -84,4 +83,172 @@ nav {
 
 .nav-buttons .button2:hover {
   background: #00a37e;
+}
+
+/********* slider *********/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #01b289;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/********* slider end *********/
+
+.plans {
+  max-width: 70rem;
+  text-align: center;
+  padding: 5em 0;
+  margin: 1em auto;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+.plans h1 {
+  flex: 1;
+  font-family: "Times New Roman", Times, serif;
+  display: inline-block;
+}
+
+.plan {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 2em 1em;
+  border: 0.3px solid rgba(2, 4, 69, 0.15);
+  border-radius: 4px;
+  margin: 0.5em;
+  position: relative;
+}
+
+.popular {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  padding: 0.5em 0;
+  text-align: center;
+  color: white;
+  background-color: #01b289;
+}
+
+.billed-yearly {
+  font-size: 0.5em;
+  text-align: right;
+  position: relative;
+  bottom: -1em;
+  display: none;
+}
+
+.plan p {
+  font-size: 0.7em;
+}
+
+.plan-version {
+  padding: 0 2em 5em 2em;
+  color: #4c525a;
+}
+
+.deactivate {
+  opacity: 0.65;
+}
+
+.plans-content {
+  display: flex;
+}
+
+.price {
+  font-size: 1.2em;
+  padding: 0.5em 0;
+  border-bottom: 2px solid #01b289;
+}
+
+.price .currency {
+  padding-bottom: 1em;
+}
+
+.price .value {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.features {
+  font-size: 0.8em;
+  list-style-type: none;
+}
+.features li {
+  padding-bottom: 0.8em;
+}
+
+.check {
+  height: 10px;
+  width: 5px;
+  border-bottom: 2px solid #01b289;
+  border-right: 2px solid #01b289;
+  transform: rotate(45deg);
+  display: inline-block;
+  margin: 0 0.7em 0.2em 0;
+}
+
+.plan-button-div {
+  text-align: center;
+  margin-top: auto;
+  padding-top: 1em;
+}
+
+.plan-button {
+  padding: 1em 2em;
+  border-radius: 4px;
+  color: #fff;
+  background: #00b289;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.plan-button:hover {
+  background-color: #00a37e;
 }

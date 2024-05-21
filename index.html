@@ -27,6 +27,207 @@
         <a class="button2" href="#">START FREE</a>
       </div>
     </nav>
-    <main></main>
+    <main>
+      <div class="plans">
+        <h1>Plans & Pricing</h1>
+        <span class="plan-version"> MONTHLY </span>
+        <label class="switch">
+          <input id="plan" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <span class="plan-version deactivate"> YEARLY </span>
+        <div class="plans-content">
+          <div class="plan">
+            <h2>Starter</h2>
+            <p>Ideal for freelancers and contractors just starting out.</p>
+            <div class="price">
+              <span class="currency">$</span> <span class="value">24</span> /
+              MONTH
+              <div class="billed-yearly">Billed yearly</div>
+            </div>
+
+            <ul class="features">
+              <li>
+                <div class="check"></div>
+                All Templates
+              </li>
+              <li>
+                <div class="check"></div>
+                Unlimited Clients & Projects
+              </li>
+              <li>
+                <div class="check"></div>
+                Invoicing & Payments
+              </li>
+              <li>
+                <div class="check"></div>
+                Proposals & Contracts
+              </li>
+              <li>
+                <div class="check"></div>
+                Tasks & Time Tracking
+              </li>
+              <li>
+                <div class="check"></div>
+                Client CRM
+              </li>
+              <li>
+                <div class="check"></div>
+                Expense Tracking
+              </li>
+              <li>
+                <div class="check"></div>
+                Up to 5 Project Collaborators
+              </li>
+            </ul>
+            <div class="plan-button-div">
+              <a class="plan-button" href="#">START FREE</a>
+            </div>
+          </div>
+          <div class="plan">
+            <span class="popular">MOST POPULAR</span>
+            <h2>Professional</h2>
+            <p>Everything a growing independent business needs to thrive.</p>
+            <div class="price">
+              <span class="currency">$</span> <span class="value">39</span> /
+              MONTH
+              <div class="billed-yearly">Billed yearly</div>
+            </div>
+            <ul class="features">
+              <li>
+                <div class="check"></div>
+                Everything in Starter plus...
+              </li>
+              <li>
+                <div class="check"></div>
+                Custom Branding
+              </li>
+              <li>
+                <div class="check"></div>
+                Forms & Questionnaires
+              </li>
+              <li>
+                <div class="check"></div>
+                Workflow Automations
+              </li>
+              <li>
+                <div class="check"></div>
+                Client Portal
+              </li>
+              <li>
+                <div class="check"></div>
+                QuickBooks Integration
+              </li>
+              <li>
+                <div class="check"></div>
+                Calendly Integration
+              </li>
+              <li>
+                <div class="check"></div>
+                Zapier Integration
+              </li>
+              <li>
+                <div class="check"></div>
+                Up to 15 Project Collaborators
+              </li>
+            </ul>
+            <div class="plan-button-div">
+              <a class="plan-button" href="#">START FREE</a>
+            </div>
+          </div>
+          <div class="plan">
+            <h2>Business</h2>
+            <p>The perfect package for small businesses and agencies.</p>
+            <div class="price">
+              <span class="currency">$</span> <span class="value">79</span> /
+              MONTH
+              <div class="billed-yearly">Billed yearly</div>
+            </div>
+            <ul class="features">
+              <li>
+                <div class="check"></div>
+                Everything in Starter and Professional plus...
+              </li>
+              <li>
+                <div class="check"></div>
+                Subcontractor Management
+              </li>
+              <li>
+                <div class="check"></div>
+                Hiring Agreement Templates (1099 contracts)
+              </li>
+              <li>
+                <div class="check"></div>
+                Subcontractor Onboarding
+              </li>
+              <li>
+                <div class="check"></div>
+                Talent Pool
+              </li>
+              <li>
+                <div class="check"></div>
+                3 Team Seats (additional seats $9/month)
+              </li>
+              <li>
+                <div class="check"></div>
+                Accountant Access
+              </li>
+              <li>
+                <div class="check"></div>
+                Connect Multiple Bank Accounts
+              </li>
+              <li>
+                <div class="check"></div>
+                Unlimited Subcontractors
+              </li>
+              <li>
+                <div class="check"></div>
+                Unlimited Project Collaborators
+              </li>
+            </ul>
+            <div class="plan-button-div">
+              <a class="plan-button" href="#">START FREE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
+  <script>
+    document.getElementById("plan").addEventListener("change", function () {
+      const pricesMonthly = ["24", "39", "79"];
+      const pricesYearly = ["17", "32", "52"];
+      let monthlyPlan = document.getElementsByClassName("plan-version")[0];
+      let yearlyPlan = document.getElementsByClassName("plan-version")[1];
+
+      const priceValues = document.getElementsByClassName("value");
+      const deactivateClass = "deactivate";
+      const monthlyPlanChecked = this.checked;
+
+      if (monthlyPlanChecked) {
+        monthlyPlan.classList.add(deactivateClass);
+        yearlyPlan.classList.remove(deactivateClass);
+        changePrices(priceValues, pricesYearly);
+        changeAdditionalPriceInfoStyleTo("block");
+      } else {
+        monthlyPlan.classList.remove(deactivateClass);
+        yearlyPlan.classList.add(deactivateClass);
+        changePrices(priceValues, pricesMonthly);
+        changeAdditionalPriceInfoStyleTo("none");
+      }
+    });
+
+    function changePrices(elements, prices) {
+      for (let i = 0; i < elements.length; i++) {
+        elements.item(i).textContent = prices[i];
+      }
+    }
+
+    function changeAdditionalPriceInfoStyleTo(value) {
+      const elements = document.getElementsByClassName("billed-yearly");
+      for (let i = 0; elements.length; i++) {
+        elements.item(i).style.display = value;
+      }
+    }
+  </script>
 </html>
