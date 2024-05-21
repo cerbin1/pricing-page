@@ -360,6 +360,10 @@ h3 {
   flex: 1;
 }
 
+.text-align-right {
+  text-align: right;
+}
+
 .color-green {
   color: #01b289;
 }
