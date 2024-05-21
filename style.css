@@ -73,7 +73,8 @@ nav {
   background: #00b289;
   color: #fff;
 }
-.nav-buttons .button2 {
+
+.button2 {
   text-decoration: none;
   color: #fff;
   background: #00b289;
@@ -82,7 +83,7 @@ nav {
   padding: 0.6em 1.5em;
 }
 
-.nav-buttons .button2:hover {
+.button2:hover {
   background: #00a37e;
 }
 
@@ -288,6 +289,7 @@ h3 {
   padding: 1em 2em;
   display: flex;
   align-items: center;
+  border-radius: 10px;
 }
 
 .inactive {
@@ -326,4 +328,38 @@ h3 {
 
 .value-time {
   font-size: 0.8em;
+}
+
+.start-section {
+  background-color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2em;
+  line-height: normal;
+  padding: 2em;
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.button3 {
+  font-size: 0.5em;
+  text-decoration: none;
+  color: #fff;
+  background: #00b289;
+  border: 1px solid #00b289;
+  border-radius: 4px;
+  padding: 0.6em 1.5em;
+}
+
+.button3:hover {
+  background: #00a37e;
+}
+
+.start-section div {
+  margin: 0 1em;
+  flex: 1;
+}
+
+.color-green {
+  color: #01b289;
 }
