@@ -415,3 +415,59 @@ h3 {
   border-bottom: 1px solid grey;
   transform: rotate(45deg);
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-col {
+  font-size: 0.8em;
+  text-align: left;
+  line-height: 0.7em;
+}
+
+.footer-col h4 {
+  padding: 1.5em 0;
+}
+
+.footer-col p:hover {
+  color: #0d0d14;
+}
+
+.footer-col p {
+  cursor: pointer;
+}
+
+.padding-top {
+  padding-top: 1em;
+}
+
+.footer-arrow::after {
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  margin-left: 0.5em;
+  margin-bottom: 0.2em;
+  display: inline-block;
+  border-right: 2px solid #0d0d14;
+  border-bottom: 2px solid #0d0d14;
+  transform: rotate(45deg);
+}
+
+.question-text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0.2em;
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  transform: rotate(45deg);
+}
+
+.footer-arrow-hidden-content {
+  font-size: 0.8em;
+}
