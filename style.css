@@ -248,6 +248,9 @@ h3 {
   border-bottom: 2px solid #01b289;
   border-right: 2px solid #01b289;
   transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   display: inline-block;
   margin: 0 0.7em 0.2em 0;
 }
@@ -414,6 +417,9 @@ h3 {
   border-right: 1px solid grey;
   border-bottom: 1px solid grey;
   transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 .footer {
@@ -453,6 +459,9 @@ h3 {
   border-right: 2px solid #0d0d14;
   border-bottom: 2px solid #0d0d14;
   transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 .question-text::after {
@@ -466,6 +475,9 @@ h3 {
   border-right: 1px solid grey;
   border-bottom: 1px solid grey;
   transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 .footer-arrow-hidden-content {
