@@ -23,6 +23,7 @@ nav {
   text-align: center;
   flex: 2;
 }
+
 .nav-items {
   flex: 3;
   display: flex;
@@ -87,6 +88,7 @@ nav {
 .nav-dropdown-product div {
   flex: 1;
   padding: 0 1em;
+  min-width: 15em;
   max-width: 15em;
   cursor: pointer;
 }
@@ -219,6 +221,7 @@ h1 {
 h2 {
   font-weight: 400;
   font-family: "Times New Roman", Times, serif;
+  line-height: normal;
 }
 
 h3 {
@@ -548,4 +551,57 @@ h3 {
 
 .footer-arrow-hidden-content {
   font-size: 0.8em;
+}
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+    padding: 1em;
+  }
+  .nav-items {
+    flex-direction: column;
+    margin: 0;
+  }
+  .button1,
+  .button2 {
+    display: block;
+    margin: 1em auto;
+  }
+  .nav-item a {
+    display: block;
+    padding: 0.5em;
+  }
+
+  .logo {
+    margin: 0.5em 0;
+  }
+
+  .start-section {
+    flex-direction: column;
+    padding: 0.5em;
+    margin: 0;
+  }
+
+  .plans-content {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+  .footer-col {
+    text-align: center;
+  }
+
+  .nav-dropdown-product {
+    position: static;
+    font-size: 0.8em;
+  }
+
+  .nav-dropdown-templates {
+    width: 100%;
+    position: static;
+    font-size: 0.8em;
+    text-align: left;
+  }
 }
