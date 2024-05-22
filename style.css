@@ -27,6 +27,7 @@ nav {
   flex: 3;
   display: flex;
   margin: 0 5em;
+  position: relative;
 }
 
 .nav-item {
@@ -72,6 +73,71 @@ nav {
 .nav-buttons .button1:hover {
   background: #00b289;
   color: #fff;
+}
+
+.nav-dropdown-product {
+  position: absolute;
+  box-shadow: 0 1px 60px 0 rgba(2, 4, 69, 0.1);
+  background-color: #fff;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-dropdown-product div {
+  flex: 1;
+  padding: 0 1em;
+  max-width: 15em;
+  cursor: pointer;
+}
+
+.nav-dropdown-product div:hover {
+  background-color: #f9f9fa;
+}
+
+.nav-dropdown-product h5 {
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-dropdown-product p {
+  font-size: 0.8em;
+}
+
+.nav-dropdown-product p {
+  font-size: 0.8em;
+}
+
+.nav-dropdown-templates {
+  position: absolute;
+  box-shadow: 0 1px 60px 0 rgba(2, 4, 69, 0.1);
+  background-color: #fff;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  vertical-align: baseline;
+  padding: 1em 0;
+}
+
+.nav-dropdown-templates div {
+  flex: 1;
+  padding: 1em;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.nav-dropdown-templates div:hover {
+  background-color: #f9f9fa;
+}
+
+.nav-dropdown-templates p {
+  display: inline;
+  padding: 1em 2em;
+}
+
+hr {
+  border: 2px solid #f9f9fa;
 }
 
 .button2 {
