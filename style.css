@@ -367,3 +367,51 @@ h3 {
 .color-green {
   color: #01b289;
 }
+
+.faq {
+  background-color: #fff;
+  margin: 2em 0;
+  padding: 2em;
+}
+
+.question {
+  text-align: left;
+  padding: 0.8em 0;
+  position: relative;
+}
+
+.question-text {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.question-text:hover {
+  color: #00b289;
+  cursor: pointer;
+}
+
+.question-answer {
+  font-size: 0.8em;
+  word-spacing: 0.1em;
+  line-height: 1.6em;
+}
+
+.faq h2 {
+  font-family: "Proximanova opt", sans-serif;
+  color: #00b289;
+  font-weight: 600;
+  padding: 1em 0;
+}
+
+.question-text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0.2em;
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  transform: rotate(45deg);
+}

@@ -284,7 +284,57 @@
             help it grow.
           </div>
           <div class="text-align-right">
-            <a class="button3 " href="#">START FREE</a>
+            <a class="button3" href="#">START FREE</a>
+          </div>
+        </div>
+        <div class="faq">
+          <h2>Frequently Asked Questions</h2>
+          <div class="question">
+            <div class="question-text">How does the free trial work?</div>
+            <p class="question-answer inactive">
+              When you start your trial with Bonsai you'll receive full,
+              unlimited access to all of Bonsai's Workflow or Workflow Plus
+              Features! You will need to enter your credit card information to
+              begin your trial, but don't worry - we won't charge you anything
+              until the subscription ends! If you wish to cancel at any time
+              during the trial period, you can do so through your Subscriptions
+              Settings Page.
+            </p>
+          </div>
+          <div class="question">
+            <div class="question-text">Can I change plans anytime?</div>
+            <p class="question-answer inactive">
+              Yes, you can from within your account. If you have already
+              subscribed to a plan, or want to downgrade or upgrade your current
+              one, you can do this by going to your "Settings" and
+              "Subscription".
+            </p>
+          </div>
+          <div class="question">
+            <div class="question-text">
+              How do I pause my Bonsai subscription?
+            </div>
+            <p class="question-answer inactive">
+              We totally understand that with the nature of freelancing, work
+              ebbs and flows so you might not always need your Bonsai
+              subscription to remain active! The good news is that you can
+              cancel or pause your monthly subscription at any time without
+              penalty. Once cancelled, you'll be able to continue logging in to
+              access all your documents and even continue to use our free
+              features, like Time Tracking! In order to cancel your
+              subscription, login to your Bonsai account.
+            </p>
+          </div>
+          <div class="question">
+            <div class="question-text">What is your refund policy?</div>
+            <p class="question-answer inactive">
+              If you contact us within 2 weeks of being charged for your
+              subscription, we will be happy to issue a refund for you!Beyond
+              those 2 weeks, you will need to cancel or modify the subscription
+              from the Subscriptions Tab in Settings to avoid future charges,
+              but refunds will not be issued. This applies to both monthly and
+              annual plans.
+            </p>
           </div>
         </div>
       </div>
@@ -337,6 +387,13 @@
       for (let i = 0; elements.length; i++) {
         elements.item(i).style.display = value;
       }
+    }
+
+    let questions = document.getElementsByClassName("question");
+    for (let i = 0; i < questions.length; i++) {
+      questions.item(i).children[0].addEventListener("click", function () {
+        questions.item(i).children[1].classList.toggle("inactive");
+      });
     }
   </script>
 </html>
