@@ -511,6 +511,7 @@ h3 {
 }
 
 .footer-col p {
+  padding: 0.2rem;
   cursor: pointer;
 }
 
