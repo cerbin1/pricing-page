@@ -137,7 +137,6 @@ nav {
 .nav-dropdown-templates div {
   flex: 1;
   display: flex;
-  /* padding: 1em; */
   padding: 0.5em 1em;
   align-items: center;
   gap: 1em;
@@ -550,6 +549,24 @@ h3 {
 .footer-arrow-hidden-content {
   font-size: 0.8em;
 }
+
+@media (max-width: 1098px) {
+  .nav-items {
+    margin: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .logo {
+    flex: 1;
+    padding-right: 0.5em;
+  }
+  .button1,
+  .button2 {
+    padding: 0;
+  }
+}
+
 @media (max-width: 800px) {
   nav {
     flex-direction: column;
