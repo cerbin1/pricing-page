@@ -13,6 +13,38 @@ nav {
   align-items: center;
   padding: 1.5em;
   background: #fff;
+  position: relative;
+}
+
+.language-switch {
+  position: absolute;
+  top: 0.45rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.2rem;
+  z-index: 2;
+  padding: 0.15rem;
+  border: 1px solid #dfe3e2;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.65rem;
+  line-height: 1;
+}
+
+.language-switch button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.45rem 0.6rem;
+  color: #4c4d5f;
+  background: transparent;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.language-switch button[aria-pressed="true"] {
+  color: #fff;
+  background: #00a37e;
 }
 
 .logo {
@@ -59,6 +91,7 @@ nav {
   flex: 2;
   font-weight: bold;
   display: flex;
+  margin-right: 4rem;
 }
 
 .nav-buttons .button {
@@ -581,6 +614,9 @@ h3 {
   .button2 {
     display: block;
     margin: 1em auto;
+  }
+  .nav-buttons {
+    margin-right: 0;
   }
   .nav-item a {
     display: block;
